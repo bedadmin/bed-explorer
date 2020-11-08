@@ -1,0 +1,727 @@
+.consoleFont {
+    font-family: Consolas, Menlo, Courier, "Microsoft YaHei", "微软雅黑", monospace;
+}
+
+.defaultFont {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+.container {
+    width: 98%!important;
+    margin-right: 0.1rem;
+    margin-left: 0.1rem;
+    padding: 0 15px;
+    font-size: 15px;
+    /* letter-spacing: -1px; */
+}
+
+.container h2 {
+    margin: 10px 0 20px 0;
+    font-weight: 600;
+}
+
+.container h2 span {
+    font-size: 15px;
+    color: #726c6c;
+}
+
+@media (max-width: 767px) {
+    .container {}
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1170px) {
+    .container {
+        width: 992px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.aColor {
+    color: #F6B330;
+}
+
+
+/* 滚动条 */
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
+::-webkit-scrollbar {
+    float: right;
+    width: 8px;
+    height: 6px;
+    background-color: #F5F5F5;
+}
+
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    background-color: #F5F5F5;
+}
+
+
+/*定义滑块 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+
+/* Transform */
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s
+}
+
+.fade-enter,
+.fade-leave-active {
+    opacity: 0
+}
+
+.demo-spin-icon-load {
+    animation: ani-demo-spin 1s linear infinite;
+}
+
+@keyframes ani-demo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.demo-spin-col {
+    height: 100px;
+    position: relative;
+    border: 1px solid #eee;
+}
+
+
+/* Table */
+
+.myTable {
+    text-align: center;
+}
+
+.myTable tr {
+    height: 46px;
+}
+
+.myTable tr th,
+.myTable tr td {
+    padding: 0 10px;
+}
+
+.myTable thead {
+    background: #f8f8f9;
+}
+
+.myTable tr:nth-child(2n) {
+    background: #f8f8f9;
+}
+
+.myTable tbody {
+    font-family: Consolas, Menlo, Courier, "Microsoft YaHei", "微软雅黑", monospace;
+}
+
+.myTable tbody tr:hover {
+    background: #eeeeee;
+}
+
+
+/* Table-container */
+
+.table-container {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin: 0 0 1em;
+}
+
+
+/* 添加IOS下滚动条 */
+
+.table-container::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 4px;
+    height: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+
+/* 详情页 */
+
+.content {
+    padding: 0 10px;
+}
+
+.backgroundColor {
+    background-color: #f8f8f9;
+}
+
+.info p {
+    /* height: 42px; */
+    line-height: 42px;
+    background-color: #f8f8f9;
+    text-indent: 1em;
+}
+
+.summary .ivu-row {
+    height: 42px;
+    line-height: 42px;
+    text-indent: 1em;
+    padding-right: 15px;
+}
+
+.transaction .transactionTitle,
+.notice {
+    height: 42px;
+    line-height: 42px;
+    background-color: #f8f8f9;
+    text-indent: 1em;
+}
+
+.transaction i.ivu-icon-ios-arrow-right,
+.transaction i.ivu-icon-ios-arrow-down {
+    margin-right: 5px;
+}
+
+.notice {
+    margin: 10px 0px 20px;
+}
+
+.panel {
+    background-color: #fff;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 15px;
+}
+
+
+/* padding 上下 */
+
+.ptb10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ptb15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.ptb20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ptb25 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+/* padding 左右 */
+
+.plr10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.plr15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.plr20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.plr25 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+/* margin 上下 */
+
+.mtb10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mtb15 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mtb20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mtb25 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+/* margin 左右 */
+
+.mlr10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mlr15 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.mlr20 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mlr25 {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.pt10 {
+    padding-top: 10px;
+}
+
+.pt15 {
+    padding-top: 15px;
+}
+
+.pt25 {
+    padding-top: 25px;
+}
+
+.page {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #eceff1;
+    border-radius: 2px;
+    border: 1px solid #cfd8dc;
+    width: 140px;
+    text-align: center;
+    margin: 10px 5px;
+    padding: 8px 0px;
+}
+
+.page-loading {
+    position: relative;
+    top: 2px;
+}
+
+.green {
+    border-color: #7CB342;
+    background-color: #7CB342;
+}
+
+.orange {
+    border-color: #f57c00;
+    background-color: #f57c00;
+}
+
+.red {
+    border-color: #d32f2f;
+    background-color: #d32f2f;
+}
+
+.blue {
+    border-color: #337ab7;
+    background-color: #337ab7;
+}
+
+
+/* mycss */
+
+body {
+    margin: 0;
+}
+
+#bed-explore {
+    background-color: #f0f0f0f0;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#buttonsesrch {
+    background-color: #F97A00;
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 25% 25%;
+    width: 30px;
+}
+
+#boxic {
+    display: inline-flex;
+    width: 100%;
+}
+
+#theme {
+    line-height: 0.7rem;
+    height: 0.5rem;
+    background-color: #343A40;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 23%;
+    background-position: 6% 5px;
+}
+
+#select {
+    display: flex;
+    background-image: url(../images/SelectType.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: left;
+    width: 10%;
+    margin-left: 2.5rem;
+}
+
+#box {
+    margin-top: 1%;
+}
+
+#container {
+    width: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+#left {
+    border-radius: 1%;
+    width: 63%;
+    margin-right: 1%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+#net-top-des {
+    background-image: url(../images/bed-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left;
+    width: 0.4rem;
+    height: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 0.1rem;
+}
+
+#net-top-des p {
+    width: 2rem;
+    margin-left: 0.42rem;
+    margin-top: 0.08rem;
+    font-size: 0.15rem;
+    font-weight: 870;
+}
+
+#iconLogo {
+    width: 20px;
+}
+
+#capacitylog {
+    width: 20px;
+}
+
+#floatloge {
+    width: 20px;
+}
+
+.net-bottom-summary-des span {
+    display: block;
+}
+
+#net-middle {
+    padding: 0 0.1rem 0.2rem;
+    border-radius: 1%;
+    margin-top: 0.2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.net-middle-summary {
+    flex: 3;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    padding: 1%;
+    height: 1rem;
+}
+
+.net-middle-blocks {
+    background-image: url(../images/block.png);
+    background-repeat: no-repeat;
+    background-position: 5% 95%;
+    background-size: 0.2rem;
+}
+
+.net-middle-capacity {
+    background-image: url(../images/capacity1.png);
+    background-repeat: no-repeat;
+    background-position: 5% 95%;
+    background-size: 0.2rem;
+}
+
+.net-middle-circulating {
+    background-image: url(../images/float1.png);
+    background-repeat: no-repeat;
+    background-position: 5% 95%;
+    background-size: 0.2rem;
+}
+
+#netWorkSummary {
+    background-color: #FFFFFF;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+.net-bottom-summary {
+    flex: 3;
+    font-family: "microsoft sans serif";
+}
+
+#net-bottom {
+    padding: 0 0.1rem 0.1rem 0.1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+#net-bottom h2 {
+    color: #3e6ff4;
+    font-size: 0.2rem;
+    margin-bottom: .2rem;
+}
+
+.net-bottom-summary-des {
+    margin-top: 15%;
+}
+
+.net-bottom-summary-des .big {
+    font-size: 0.12rem;
+    color: #54515C;
+}
+
+.net-bottom-summary-des span {
+    color: #888888;
+    font-size: 0.14rem;
+}
+
+.net-middle-summary-des .big {
+    text-align: left;
+    font-size: 0.12rem;
+    color: #b3b3b3;
+}
+
+.net-middle-summary-des p {
+    text-align: center;
+    font-size: 0.2rem;
+    color: #000000;
+    line-height: 0.3rem;
+}
+
+#fsSummary {
+    margin-top: 0.1rem;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 0.1rem;
+    overflow: hidden;
+}
+
+
+/* table */
+
+#table-striped thead tr th {
+    font-size: 0.12rem;
+    padding: 0.1rem;
+    background-color: #F5F6FA;
+}
+
+#table-striped tbody {
+    font-size: 0.115rem;
+    text-align: center;
+}
+
+#table-striped {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table-responsive {
+    width: 100%;
+    display: flex;
+    padding-bottom: 0.1rem;
+}
+
+
+/* right */
+
+#right {
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+}
+
+#top {
+    padding: 0.1rem;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+#bottom-transaction {
+    overflow: hidden;
+    width: 100%;
+    padding: 0.1rem;
+    margin-top: 0.1rem;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+#bottom-tabl {
+    text-align: center;
+    width: 100%;
+}
+
+#blocksGraph {
+    font-size: 0.15rem;
+    line-height: 0.4rem;
+}
+
+.blocksGraph-basicInfo-des span {
+    margin: 20%;
+}
+
+.blocksGraph-basicInfo-des {
+    flex: 1;
+    padding: 0.1rem 0.2rem;
+    line-height: 0.3rem;
+    font-size: 0.12rem;
+}
+
+.blocksGraph-basicInfo-des li {
+    font-size: 0.125rem;
+    font-weight: 700;
+}
+
+.blocksGraph-basicInfo {
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    line-height: 0.1rem;
+}
+
+#blocksGraph-slotInfo {
+    text-align: center;
+}
+
+#blocksGraph-slotInfo h2 {
+    font-size: 0.2rem;
+    line-height: 0.5rem;
+}
+
+#text-Graph {
+    width: 100%;
+    height: 2.5rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#bottom-table {
+    width: 100%;
+}
+
+#bottom-table thead tr th {
+    font-size: 0.12rem;
+    padding: 0.1rem;
+    background-color: #F5F6FA;
+}
+
+#bottom-table tbody {
+    font-size: 0.115rem;
+}
+
+#bottom-table-box {
+    padding-bottom: 0.1rem;
+}
+
+#col h2 {
+    font-size: 0.2rem;
+    line-height: 0.55rem;
+}
+
+#bottom-transaction h2 {
+    font-size: 0.2rem;
+    line-height: 0.55rem;
+}
+
+
+/* 图表 */
+
+#blocksGraph-slotInfo-chart #row {
+    width: 100%;
+    height: 2.5rem;
+}
+
+#blocksGraph-slotInfo-chart h2 {
+    margin-top: 0.5rem;
+    text-align: center;
+}
